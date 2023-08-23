@@ -7,12 +7,23 @@
     <title>Explore Basic CSS</title>
 </head>
 <style>
+    #short {
+        color: red;
+        text-align: center;
+    }
+
+    .player {
+        text-align: right;
+    }
+
     li {
         color: indigo;
+        font-weight: bolder;
     }
 
     p {
         background-color: darkkhaki;
+        width: 500px;
     }
 </style>
 
@@ -20,13 +31,15 @@
     <h3 style="color: blueviolet;">Learning Basic CSS</h3>
     <h4 style="background-color: aquamarine;">Inline CSS</h4>
     <p>CSS meaning: Cascading style sheet</p>
-    <p> style is colorful</p>
-    <p> short from is css</p>
+    <p id="short"> style is colorful</p>
+    <p class="player"> short from is css</p>
     <ul>
         <li>Inline</li>
         <li>Internal or embeded</li>
         <li>external</li>
     </ul>
+    <p> this is a stand alone paragraph</p>
+    <p class="player">cric fan</p>
 </body>
 
 </html>
