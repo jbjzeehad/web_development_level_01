@@ -20,3 +20,5 @@ HTML semantic tags for structure
 >> <section> : is a way of grouping nearby content of a similar theme
 >> <aside> : an aside element defines content that's less important
 >> <footer> : you use footer at the bottom of a page . it usually includes contact information. copyright information and some site navigation.
+
+All important HTML tags : link >> https://www.tutorialrepublic.com/html-reference/html5-tags.php
