@@ -1,0 +1,22 @@
+
+What is semantic HTML ?
+
+>> semantic html also known as semantic markup, refers to the use of HTML tags that convey the meaning- or semantics- of the contained within them.
+>> by adding semantic HTML tags to your pages you provide additional information
+>> as opposed to non semantic HTML, which uses tags that don't directly convey meaning
+
+Why do i need to use semantic HTML tags ?
+
+>> accessibility - it is not that easy for users who are blind or visually impaired and rely on screen readers. THe proper use of HTML semantic tags will allow these readeres to understand your content better bcz their screen readers will communicate your content more accurately
+>> SEO - semantic tags are important for SEO(search engine optimization) because they indicate the role of the content within the tags.
+that info gives search engine crawlers , like googlebot, a better understanding of your content. this increases the chances that your content will be selected as a candidate for ranking on the search engine results page (SERP) for relevant keywords
+
+HTML semantic tags for structure
+
+>> <header> : the header tag defines content that should be considered the introductory information of a page
+>> <nav> : the navigation tag is used for navigation links
+>> <main> : this tag contains the main content (also called the body) of a page
+>> <article> : the article tag defines content that could stand independently of the page or site it's on
+>> <section> : is a way of grouping nearby content of a similar theme
+>> <aside> : an aside element defines content that's less important
+>> <footer> : you use footer at the bottom of a page . it usually includes contact information. copyright information and some site navigation.
