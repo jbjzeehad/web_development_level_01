@@ -49,9 +49,9 @@ nav a {
 .header {
 
     background-color: #fff8f3;
-    background-image: url("F:\\programming_hero_complete_web_development_course\\milestone_01\\module_05\\portfolio-resources-main\\images\\header_bg.png");
+    background-image: url("F:\\programming_hero_complete_web_development_course\\milestone_01\\module_05\\portfolio-resources-main\\images\\header_bg.png"), url("../portfolio-resources-main/images/developer.png");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 
 .banner {
