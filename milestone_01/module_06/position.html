@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <style>
+        .swim-container {
+            position: relative;
+            border: 2px solid peru;
+        }
+
+        .box {
+            border: 2px dotted plum;
+            width: 200px;
+        }
+
+        /*.ring {
+            position: relative;
+            left: 50px;
+            top: 30px;
+            top: -30px;
+        }*/
+        /*.ring {
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        }*/
+        .dummy {
+            border: 1px solid turquoise;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* .ring {
+            position: sticky;
+            top: 0px;
+        }*/
+        .ring {
+            position: fixed;
+            top: 200px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS position</h3>
+    <ol>
+        <!-- flow related -->
+        <li>Static</li>
+        <li>Relative: current position relative a koto tuku change hobe and will not leave the current spot.</li>
+        <li>Absolute: will lose it's own position and will move based on the root </li>
+        <!-- Scroll related -->
+        <li>Fixed: j location dibo oikhanei always screen a show korbe sorbena</li>
+        <li>Sticky: oi position theke sorbena</li>
+    </ol>
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="boy.svg" alt="">
+        </div>
+        <div class="box ring">
+            <img src="ring.svg" alt="">
+        </div>
+        <div class="box water">
+            <img src="water.svg" alt="">
+        </div>
+        <div class="dummy">1</div>
+        <div class="dummy">2</div>
+        <div class="dummy">3</div>
+        <div class="dummy">4</div>
+        <div class="dummy">5</div>
+        <div class="dummy">6</div>
+        <div class="dummy">7</div>
+        <div class="dummy">8</div>
+    </div>
+</body>
+
+</html>
