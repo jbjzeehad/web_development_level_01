@@ -1,0 +1,28 @@
+
+Important topics :
+flexbox
+grid
+CSS media quiery
+interview tips : difference between flex and grid.
+
+Different units:
+% - relative to the value of parent element. 100% is the width of the parent element.
+px - pretty self explanatory. Absolute length in pixel.
+em - relative to the font-size of the parent element.
+rem - relative to font-size of the root element.
+vw - equal to 1% of the width of the browser window size.
+vh - equal to 1% of the height of the browser window size.
+
+Absolute : egula fixed responsive hobena
+    -pixel px
+    -inches in
+    -centimeters cm
+    -milimeters mm 
+    -points pt 
+    -picas pc 
+Relative : 
+    -percentage %
+    -font sizes em,rem
+    -character sizes ex,ch 
+    -viewportmax vmax
+    -viewportmin vmin 
