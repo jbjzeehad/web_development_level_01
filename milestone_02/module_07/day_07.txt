@@ -26,3 +26,27 @@ Relative :
     -character sizes ex,ch 
     -viewportmax vmax
     -viewportmin vmin 
+
+>> Grid : focuses on content placement - layout first
+- provides a mechanism to divide available viewport for layout into columns and rows.
+- each item can be positioned anywhere in a grid cell
+- when to use grid ?? >> you have a complex design to implement , you need to have a gap between block elements, you need to overlap elements, you need a layout first design
+
+>> Flexbox: focuses on content flow - content first
+- widths(or heights) of flex items are determined by the content of the item
+- spacing and aligning items are flexible
+- when to use flexbox ?? >> you have a small design to implement, you need to align element, you need a content first design
+
+>> Media Query : 
+- the key part of responsive web design
+- used to create different layouts depending on the size of the viewport
+- use to check width and height of the viewport
+- use to check orientation ( is the tab/phone in landscape or potrait mode)
+- used to check resolution
+
+>> 7 things to make website responsive :
+- use viewport meta tag
+- css relative measuring units
+- make image fluid(use % as width)
+- body max width and center position
+- two column using flex layout and media
