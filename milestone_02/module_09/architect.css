@@ -111,6 +111,30 @@ main {
     font-weight: 700;
 }
 
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #ff900e;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 40px 30px;
+}
+
+.facts-card-container .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424244;
+}
+
 /* responsive media queries */
 
 /* mobile devices */
