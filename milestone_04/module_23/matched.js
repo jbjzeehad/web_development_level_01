@@ -26,3 +26,6 @@ function matchedProducts(products, search) {
 }
 const result = matchedProducts(products, 'phone');
 console.log(result);
+
+const a = 0;
+console.log(2 / a);
