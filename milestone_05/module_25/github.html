@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="scrt-info">My Secret Info</h1>
+    <input id="dlt-cnf" type="text" placeholder="please type delete">
+    <button id="btn-dlt" disabled>Delete</button>
+    <script>
+        document.getElementById('dlt-cnf').addEventListener('keyup', function (event) {
+            const text = event.target.value;
+            const deletebutton = document.getElementById('btn-dlt');
+            if (text === 'delete') {
+                deletebutton.removeAttribute('disabled');
+            }
+            else {
+                deletebutton.setAttribute('disabled', true);
+            }
+
+        })
+
+
+
+        document.getElementById('btn-dlt').addEventListener('click', function () {
+            const secret = document.getElementById('scrt-info');
+            secret.style.display = 'none';
+
+        })
+    </script>
+</body>
+
+</html>
