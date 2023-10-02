@@ -13,8 +13,13 @@ function calTraingleArea() {
 
     const area = 0.5 * base * high;
     console.log(area);
+    if (isNaN(base) || isNaN(high)) {
+        alert('Plz insert a number');
+        return;
+    }
     const areafield = document.getElementById('tri-area');
     areafield.innerText = area;
+    addcalentry('Triangle:', area);
 }
 
 function calparallelogramArea() {
@@ -85,4 +90,24 @@ function caleArea() {
     const bfield = getinputvalue('b');
     const area = 3.1416 * pfield * bfield;
     const areafield = setElementInnerText('e-area', area);
+}
+
+
+/*
+data Validation :
+1. set the proper type of the input field. (number,data,email,text)
+2. check type (typeof)
+3. isNaN() not a number function
+
+
+
+
+*/
+
+function addcalentry(type, valuearea) {
+    const cal = document.getElementById('cal-entry');
+    const p = document.createElement('p');
+    p.innerHTML = `${type} ${valuearea} cm<sup>2</sup>`;
+    cal.appendChild(p);
+
 }
