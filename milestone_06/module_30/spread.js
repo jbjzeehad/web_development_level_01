@@ -9,6 +9,16 @@ console.log(...numbers);
 const arraymax = Math.max(...numbers);
 console.log(arraymax);
 
+const friends = [12, 4, 45, 78];
+const bondhu = friends;
+const dosto = [...friends]; //copy
+console.log(dosto);
+friends.push(100);
+console.log(dosto);
+console.log(friends);
+
+const songkha = [...friends, 9999]; //add extra elements while copy
+console.log(songkha);
 
 
 
