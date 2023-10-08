@@ -22,3 +22,7 @@ const add4 = (a, b, c, d) => a + b + c * d;
 
 const sum34 = add4(4, 6, 8, 44);
 console.log(sum34);
+
+const obj = { foo: 1 };
+obj.bar = 2;
+console.log(obj);
