@@ -1,0 +1,92 @@
+>> Video 01:
+
+var: no reason to use var.
+let : allow it to reassign.
+const: do not allow it to reassign.
+    -const dia array declare korle vitorer valugulo sudhu change kora jae. object er khetreo same. vitorer propertyr name shudhu change kora jae.
+
+>> Video 02:
+
+function a argument hishebe kono man jodi na dai tahle seta undefied. akhn 5 er sathe undefined jog korle seta NaN(Not a Number) dekhabe. abar undefined undefined jog korleo NaN show korbe.
+function a parameters hocche jkhn function er sathe variable declare kori. ar jkhn function k call kori tkhn jei variable dia call kori seta hocche argument.
+function sum (num1,num2){} > parameters
+sum(4,5) > argument
+
+akhn argument a  jodi value provide na kora thake tahle function er parameters a default value nibe. dile default  value ignore kore jabe.
+string er khetre '' empty string, array er [] empty array,object er {} empty object, value er khetre 0 ba 1 default hishebe set kora hoy.
+
+>> Video 03:
+
+back quatation `` jake bole Backticks. aita akta ES6 feature that allows you to create strings in JS.
+
+const a= 'Jbj';
+const b= 'Zeehad';
+`My name is ${a} {b}.` 
+
+akhane easily use korte partechi. abar multiline ao likha jae. aita k bole template string.
+
+>> Video 04.05:
+
+function expression hocche akta function k kono variable er vitore rakhbo.
+
+const add = function(a,b){
+    return a+b;
+}
+console.log(add(5,6));
+
+ekhane functioner name likha lagtechena. r call korar somoy variable er vitorei call kora jae.
+
+arrow function : const add =(a,b) => a + b
+akhane add variable er por = sign ta dawa hoy parameter er jonno () er vitor parameter thakteo pare naw pare. erpor => sign ta dawa hoe return korar jonno. amra ja return korte chai. evabe array object j kono kichui arrow function dia likha jae.
+tobe multiple line a likhte gele {} kora lage.
+
+const add =(a,b) => {
+    const a = 4;
+    const b = 6;
+    return a + b;
+}
+
+abar akta parameter hole () na dileo chole. 
+
+const add = result => {
+    const new = 2;
+    return new + result;
+}
+
+>> Video 06:
+
+Math.max() er vitore jeta maxmum number saita ouput dibe.
+
+const number = Math.max(43,5,465,56,67,467,5);
+console.log(number);
+
+output dibe 467
+
+akhn jodi kono array er vitor theke maximum number ber korte chai tkhn kintu error dibe.
+
+const number = Math.max([43,5,465,56,67,467,5]);
+console.log(number); output NaN dekhabe.
+
+aikhetre amra use korbo spread operators ... 3 ta dot dia bujhae tkhn error dibena. ... operator array theke value ber kore nia ashe. erpor seta r array thakena. er por sekhan theke maximum vlue ta dae.
+
+const number2 = Math.max(...[43, 5, 465, 56, 67, 467, 5]);
+console.log(number2);
+
+akhn kintu thikmoto maximum value ta dibe.
+
+er por spread operator dia copy kora jae. 
+
+const arr1 = [1,2,3];
+const arr2 = arr1;
+const arr3 = [...arr1]; akhane copy kortechi. 
+arr3.push(10);
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+
+fole arr3 er value [1,2,3,10] ashbe. baki 2 ta same thakbe.karwn same array kai point korteche.
+
+abar copy korar somoy extra element o push kora jae. 
+
+const arr3 = [...arr1,78]; akhane copy hocche sathe push o hocche.
+
