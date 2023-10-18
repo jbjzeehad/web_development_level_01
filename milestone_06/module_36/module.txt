@@ -90,3 +90,29 @@ abar copy korar somoy extra element o push kora jae.
 
 const arr3 = [...arr1,78]; akhane copy hocche sathe push o hocche.
 
+>> Video 07:
+
+
+- object destructure
+
+const {number} = person; 
+
+ekhane person jodi akta object hoy tahle bam pasher taw object and obj er property gulo call korte parbo. eta k ble destructure. akhane property ta akta variable hishebe kaj korteche.
+
+const {number,age} = person;
+
+2 ta property o use korte pari.
+
+const {number, age: boyos} = person;
+
+abar propertyr vitor name change korte pari.jmn akhnae age property k change kore variable boyos bania dice.
+
+- array destructure
+
+const number = [45,66,5];
+
+const [frst,second,third] = number; 
+
+ekhane 3 ta variable dia arrayr 3 ta value k bujhacche.
+
+const [x,y] = [12,34]; akhaneo same
