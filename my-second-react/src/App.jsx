@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Counter'
+import Team from './team'
+import Users from './users'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
   return (
     <>
       <h3>Vite + React</h3>
+      <Users></Users>
+      <Team></Team>
       <Counter></Counter>
 
 
