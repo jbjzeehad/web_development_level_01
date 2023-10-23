@@ -5,6 +5,7 @@ import './App.css'
 import Counter from './Counter'
 import Team from './team'
 import Users from './users'
+import Friends from './Friends'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <h3>Vite + React</h3>
+      <Friends></Friends>
       <Users></Users>
       <Team></Team>
       <Counter></Counter>
