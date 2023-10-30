@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "cover": "https://i.ibb.co/wQvQx6K/1.jpg",
+        "title": "The Mystery of Quantum Computing",
+        "author": "Alice Johnson",
+        "author_img": "https://i.ibb.co/2ZjGKjp/boy1.png",
+        "posted_date": "2023-10-15",
+        "reading_time": 8,
+        "hashtags": [
+            "technology",
+            "quantum",
+            "computing"
+        ]
+    },
+    {
+        "id": 2,
+        "cover": "https://i.ibb.co/tZcCbm3/2.png",
+        "title": "Exploring the World of Virtual Reality",
+        "author": "Bob Smith",
+        "author_img": "https://example.com/authors/bob.jpg",
+        "posted_date": "2023-10-20",
+        "reading_time": 6,
+        "hashtags": [
+            "VR",
+            "technology",
+            "gaming"
+        ]
+    },
+    {
+        "id": 3,
+        "cover": "https://i.ibb.co/WyyCqNq/3.png",
+        "title": "Cooking Adventures: Gourmet Delights",
+        "author": "Eva Martinez",
+        "author_img": "https://example.com/authors/eva.jpg",
+        "posted_date": "2023-10-25",
+        "reading_time": 10,
+        "hashtags": [
+            "cooking",
+            "food",
+            "recipes"
+        ]
+    },
+    {
+        "id": 4,
+        "cover": "https://i.ibb.co/2d1cqjx/4.jpg",
+        "title": "Traveling the Amazon Rainforest",
+        "author": "David Williams",
+        "author_img": "https://example.com/authors/david.jpg",
+        "posted_date": "2023-10-28",
+        "reading_time": 12,
+        "hashtags": [
+            "travel",
+            "adventure",
+            "nature"
+        ]
+    },
+    {
+        "id": 5,
+        "cover": "https://example.com/cover5.jpg",
+        "title": "Mindfulness and Stress Reduction",
+        "author": "Grace Turner",
+        "author_img": "https://example.com/authors/grace.jpg",
+        "posted_date": "2023-10-30",
+        "reading_time": 7,
+        "hashtags": [
+            "mindfulness",
+            "health",
+            "wellness"
+        ]
+    }
+]
