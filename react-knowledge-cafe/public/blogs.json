@@ -54,19 +54,5 @@
             "adventure",
             "nature"
         ]
-    },
-    {
-        "id": 5,
-        "cover": "https://example.com/cover5.jpg",
-        "title": "Mindfulness and Stress Reduction",
-        "author": "Grace Turner",
-        "author_img": "https://example.com/authors/grace.jpg",
-        "posted_date": "2023-10-30",
-        "reading_time": 7,
-        "hashtags": [
-            "mindfulness",
-            "health",
-            "wellness"
-        ]
     }
 ]
