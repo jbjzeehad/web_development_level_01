@@ -1,11 +1,12 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { sendPasswordResetEmail, signInWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
     const [registerError, setRegisterError] = useState('');
     const [success, setSuccess] = useState('');
+    const emailRef = useRef(null);
 
 
 
@@ -17,16 +18,50 @@ const Login = () => {
         console.log(email, password);
         setRegisterError('');
         setSuccess('');
+
+        //add validation
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 console.log(result.user);
-                setSuccess('User logged in successfully.')
+                // setSuccess('User logged in successfully.')
+                if (result.user.emailVerified) {
+                    setSuccess('User logged in successfully.');
+                }
+                else {
+                    alert('Please verified email address');
+                }
             })
             .catch(error => {
                 console.error(error);
                 setRegisterError(error.message);
             })
     }
+
+
+    const handleForgetPassword = () => {
+        const email = emailRef.current.value;
+        if (!email) {
+            console.log('Please provide an email', emailRef.current.value);
+            return;
+        }
+        else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+            console.log('please write a valid email');
+            return;
+        }
+
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                alert('Please check your email');
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
+    }
+
+
+
+
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -40,7 +75,8 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                            <input type="email" name="email"
+                                ref={emailRef} placeholder="email" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -48,7 +84,7 @@ const Login = () => {
                             </label>
                             <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                             <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                <a onClick={handleForgetPassword} href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
                         <div className="form-control mt-6">

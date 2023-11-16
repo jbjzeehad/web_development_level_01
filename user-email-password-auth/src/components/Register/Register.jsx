@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -12,10 +12,11 @@ const Register = () => {
 
     const handleRegister = e => {
         e.preventDefault();
+        const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
         const accepted = e.target.terms.checked;
-        console.log(email, password, accepted);
+        console.log(name, email, password, accepted);
         if (password.length < 6) {
             setRegisterError('At least 6 character long');
             return;
@@ -35,6 +36,27 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 setSuccess('User Created Successfully');
+                //update profile
+                updateProfile(result.user, {
+                    displayName: name,
+
+                })
+                    .then(() => {
+                        console.log('Profile updated');
+                    })
+                    .catch()
+
+                //email verification
+
+                sendEmailVerification(result.user)
+                    .then(() => {
+                        alert("please check your email for verification");
+                    })
+
+
+
+
+
             })
             .catch(error => {
                 console.error(error);
@@ -51,6 +73,8 @@ const Register = () => {
                 <h2 className="text-3xl mb-8  ">Please Register</h2>
                 <form onSubmit={handleRegister}>
                     <input className="px-4 py-2 mb-4 w-full" type="email" name="email" placeholder="Email Address" id="" required />
+                    <br />
+                    <input className="px-4 py-2 mb-4 w-full" type="text" name="name" placeholder="Your Name" id="" required />
                     <br />
                     <div className="mb-4 relative">
                         <input className="px-4 py-2 w-full" type={showPassword ? 'text' : 'password'} name="password" placeholder="Password" id="" required />
